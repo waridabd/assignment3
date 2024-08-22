@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    .manrope-style {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'button-color': '#ABEF5F',
+            'nav-color' :'#737373',
+            'hero-button' :'#ABEF5F80',
+            'header-bg' :'#FFFFFFFF #FFFFFF00'
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body class="manrope-style">
+    <header class="container mx-auto bg-header-bg">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  
+                  <a class="btn btn-ghost text-xl font-bold">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <div class="navbar bg-base-100">
+ 
+      <li><a class="text-base font-extrabold">Home</a></li>
+      <li><a class="text-nav-color">Services</a></li>
+      <li><a class="text-nav-color">Portfolio</a></li>
+     
+      <li><a class="text-nav-color">Blogs</a></li>
+      <li><a class="text-nav-color"> contact Us</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a class="btn bg-button-color ">Book Consult</a>
+  </div>
+</div>
+<hero>
+    <div class="hero  min-h-screen">
+        <div class="hero-content text-center">
+          <div class="max-w-4xl">
+           
+            <img class="mx-auto" src="assets/banner.png" alt="">
+            
+            <h1 class="text-5xl font-bold">A barn house of this design has a  striking appearance</h1>
+            <p class="py-6">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+            </p>
+            <button class="btn bg-hero-button">View Details</button>
+          </div>
+        </div>
+      </div>
+    <!--<img src="assets/banner.png" alt="">
+    <h1>A barn house of this design has a <br> striking appearance</h1>
+    <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+    <button>View Details</button>-->
+</hero>
+                    
+                   
+    </header>
+
+    <main></main>
+    <footer></footer>
+</body>
+</html>
