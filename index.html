@@ -21,6 +21,12 @@
     tailwind.config = {
       theme: {
         extend: {
+          
+          backgroundImage:{
+          contactbg: "url('./assets/bg.jpg')",
+          },
+         
+        
           colors: {
             clifford: '#da373d',
             'button-color': '#ABEF5F',
@@ -33,13 +39,23 @@
             'card-3' : 'rgb(164, 218, 195)',
             'card-4' :'rgb(119, 170, 234)',
             'text-colour' : 'rgb(73, 73, 73)',
+            'article-button':' rgba(171, 239, 95, 0.2)',
+            'footer-color' : 'rgb(115,115,115)',
+            'input-color' :'rgb(160,160,160)',
+           
             
 
           }
+         
+          }
         }
-      }
     }
+  
+    
+  
   </script>
+ 
+        
 
 </head>
 <body class="manrope-style">
@@ -89,7 +105,7 @@
 
     <main>
       
-            <div class=" hero bg-base-200 min-h-screen">
+           <!-- <div class=" hero bg-base-200 min-h-screen max-w-screen container mx-auto sm:w-full">
                 <div class="hero-content flex flex-col-reverse  lg:flex-row-reverse lg:justify-between">
                     <div class="pt-20">
                   <img
@@ -100,7 +116,7 @@
                     <img class="mb-6" src="assets/Vector.png" alt="">
                     <button class="btn bg-button-second text-black py-0.5 mb-4">About Us</button>
                     <h2 class="font-bold text-4xl">We design thoughtful, liveable spaces</h2>
-                    <p class="py-6 text-base font-medium text-colour">
+                    <p class="py-6 text-base font-medium text-colour ">
                         The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
                     </p>
                     <div >
@@ -113,7 +129,7 @@
                         </figure>
                         <div class="card-body">
                           <h2 class="card-title">commercial</h2>
-                          <p class="text-colour py-6 text-base font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                          <p class="text-colour  text-base font-medium py-6">The barn house captivates with its blend of rustic charm and modern.</p>
 
                         </div>
                       </div>
@@ -125,21 +141,22 @@
                         </figure>
                         <div class="card-body">
                           <h2 class="card-title">residential</h2>
-                          <p class="text-colour py-6 text-base font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                          <p class="text-colour py-6 text-base font-medium py-6">The barn house captivates with its blend of rustic charm and modern.</p>
                          
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <section class="mt-24 bg-base-200 min-h-screen container mx-auto">
+              </div>-->
+            
+              <section class="mt-24 bg-base-200 min-h-auto container mx-auto py-10">
                 <div class="text-center">
                 <button class="btn bg-button-second mb-1 ">How we work</button>
                 <h2 class="font-bold text-4xl">Our Works Process</h2>
                 <p class="py-6 text-base font-medium text-colour">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents</p>
               </div>
-            <div class=" container mx-auto text-center">
+            <div class=" container mx-auto text-center px-4">
               <div class="grid grid-cols 1 lg:grid-cols-4 gap-10">
                 <div class="card bg-card-1 shadow-xl">
                   <div class="card-body">
@@ -179,19 +196,19 @@
                   
                 
               </section>
-              <section class="   bg-base-200  mt-24">
-                <div class="lg:container mx-auto"></div>
+              <section class="   bg-base-200  mt-24 py-10">
+                <div class="container mx-auto"></div>
                 <div class="text-center">
-                <button>Rinterio News</button>
-                <h2 class="font-bold text-4xl">Read Our Articles and News</h2>
-                <p class=" text-base font-medium text-colour">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <button class="bg-article-button rounded-3xl py-2 px-4 color-black text-base font-bold mb-7">Rinterio News</button>
+                <h2 class="font-bold text-4xl mb-7">Read Our Articles and News</h2>
+                <p class=" text-base font-medium text-colour text-center  lg:px-20 ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
 
               </div>
-              <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
+              <div class="container mx-auto grid grid-cols-1 mt:16 mt-7 lg:grid-cols-3 gap-10 container mx-auto mt-16">
                 <div class="card card-compact bg-base-100 shadow-xl">
                   <figure>
                     <img
-                      src="assets/article1.png" class=" border-dashed border-2  border-text-nav-color"
+                      src="assets/article1.png" class=" border-dashed border-2  border-text-nav-color mt-6"
                       alt="" />
                   </figure>
                  
@@ -212,7 +229,7 @@
                 <div class="card card-compact bg-base-100  shadow-xl">
                   <figure>
                     <img
-                      src="assets/article2.png" class=" border-dashed border-2  border-text-nav-color"
+                      src="assets/article2.png" class=" border-dashed border-2  border-text-nav-color mt-6"
                       alt="" />
                   </figure>
                  
@@ -233,7 +250,7 @@
                 <div class="card card-compact bg-base-100  shadow-xl">
                   <figure>
                     <img
-                      src="assets/article3.png" class=" border-dashed border-2  border-text-nav-color"
+                      src="assets/article3.png" class=" border-dashed border-2  border-text-nav-color mt-6"
                       alt="" />
                   </figure>
                  
@@ -254,8 +271,44 @@
                 
               </div>
               </section>
-       
+              <div class="bg-contactbg mt-20">
+                <div class="flex flex-col justify-center items-center w-auto h-screen gap-5 mb-20">
+                  <button class="bg-article-button rounded-3xl py-2 px-4  text-base font-bold  ">Let's Connect</button>
+                  <div class="flex flex-col justify-center items-center gap-5 w-[60%]">
+                    <span class="font-bold text-4xl mb-7"">Let's Discuss Next Project</span>
+                    <span class="text-base font-medium text-colour text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. A suscipit ut corrupti nobis, dignissimos molestiae hic omnis eos eaque, doloremque aliquam aliquid repellendus alias itaque reiciendis incidunt, eveniet nihil! Nam!</span>
+                  </div>
+                  <div class=" grid grid-cols-1 lg:flex lg:flex-col lg:gap-4 lg:justify-center lg:items-center">
+                    <div class=" gap-y-4 mt-2 lg:flex lg:gap-2">
+                      <input type="text" placeholder="first name*" class="input input-bordered input-sm w-full max-w-xl  border-box rounded-2xl text-base font-medium input-color" />
+                      <input type="text" placeholder="Last name*" class="input input-bordered input-sm w-full max-w-xl border-box rounded-2xl text-base font-medium input-color"/>
+                    </div>
+                    <div class=" gap-2 mt-2 lg:flex lg:gap-2 ">
+                      <input type="text" placeholder="Phone number*" class="input input-bordered input-sm w-full max-w-xl border-box rounded-2xl text-base font-medium input-color" />
+                      <input type="text" placeholder="Email*" class="input input-bordered input-sm w-full max-w-xl border-box rounded-2xl text-base font-medium input-color"/>
+                    </div>
+                    <textarea placeholder="Write your message here" rows="8" cols="50" class=" rounded-2xl text-base font-medium input-color border-box mt-2"></textarea>
+                    <button class=" w-full  bg-button-color lg:w-[100%] font-extrabold text-xl border-box rounded-2xl mt-2">Send Mail</button>
+                  </div>
+                </div>
+              </div>
+              
     </main>
-    <footer></footer>
+    <footer class=" max-w-screen h-screen"> 
+      <section class="  container mx-auto bg-black text-center">
+        <h2 class="font-bold text-4xl text-white pt-20 pb-12">Rinterio</h2>
+        <p class=" font-medium footer-color pt-12 text-center pb-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quod at ipsa saepe cum dolores molestias iure eos quam enim adipisci, voluptate error sunt natus earum minus ut, explicabo architecto?</p>
+        <ul class=" grid grid-cols-1 gap-10 lg:flex  lg:items-center lg:justify-center  lg:gap-24"> 
+          <li class="list-none "><a class="no-underline font-normal text-white text-base" href="#">Home</a></li>
+          <li class="list-none"><a class="no-underline font-normal text-white text-base" href="#">Services</a></li>
+          <li class=" list-none"><a class="no-underline font-normal text-white text-base" href="#">Portfolio</a></li>
+         
+          
+          <li class=" list-none"><a class="no-underline font-normal text-white text-base" href="#">Blogs</a></li>
+          <li class=" list-none"><a class="no-underline font-normal text-white text-base" href="#">Contact Us</a></li>
+      </ul>
+      <button class="  bg-button-color font-extrabold mt-8 text-2xl p-3 rounded-2xl border-box mb-20 ">Book  Consult</button>
+      </section>
+    </footer>
 </body>
 </html>
