@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
     .manrope-style {
@@ -42,7 +49,12 @@
             'article-button':' rgba(171, 239, 95, 0.2)',
             'footer-color' : 'rgb(115,115,115)',
             'input-color' :'rgb(160,160,160)',
-           
+            'header-bg1' : 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%)',
+            'text-second' :'rgb(73,73,73)',
+           'linear-bg' :'linear-gradient(90deg,white,#ffffff41)',
+           'linear-bg2':'linear-gradient(90deg,#ffffff41,white)',
+           'creative-bg' :'rgba(13, 19, 33, 0.02)',
+           'neutral' :'#fafafa',
             
 
           }
@@ -54,21 +66,21 @@
     
   
   </script>
- 
-        
+ </head>
 
-</head>
+ <!--header section-->
+
 <body class="manrope-style">
-    <header class=" container mx-auto bg-header-bg">
+    <header class=" container mx-auto h-auto bg-header-bg1">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   
-                  <a class="btn btn-ghost text-xl font-bold">Rinterio</a>
+                  <a class="btn btn-ghost text-3xl font-extrabold"><i class="fa-solid fa-arrow-right  rounded-full bg-button-color p-1 -rotate-45"></i>Rinterio</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <div class="navbar bg-base-100">
+                  <ul class="menu menu-horizontal px-1 ">
+                    <div class="navbar bg-base-100 flex-grow">
  
       <li><a class="text-base font-extrabold">Home</a></li>
       <li><a class="text-nav-color">Services</a></li>
@@ -76,10 +88,19 @@
      
       <li><a class="text-nav-color">Blogs</a></li>
       <li><a class="text-nav-color"> contact Us</a></li>
+      
     </ul>
+    
+    
   </div>
+ 
   <div class="navbar-end">
-    <a class="btn bg-button-color ">Book Consult</a>
+    <div class="hidden lg:flex flex-row">
+    <i class="fa-solid fa-magnifying-glass  bg-slate-100 rounded-full p-2  mr-3"></i>
+    <i class="fa-solid fa-cart-shopping text-white  bg-slate-100 rounded-full p-2 mr-2"></i>
+    </div>
+    <i class="fa-solid fa-bars rounded-full p-2  bg-slate-100 lg:hidden"></i>
+    <a class="btn bg-button-color hidden lg:flex font-extrabold text-xl ">Book Consult<i class="fa-solid fa-arrow-right  rounded-full bg-black p-1 text-white -rotate-45"></i></a>
   </div>
 </div>
 <hero>
@@ -93,31 +114,33 @@
             <p class="py-6 text-colour text-base font-medium">
                 The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
             </p>
-            <button class="btn bg-hero-button">View Details</button>
+            <button class="btn bg-hero-button rounded-2xl text-xl font-bold">View Details<i class="fa-solid fa-arrow-right  rounded-full bg-button-color p-1 -rotate-45"></i></button>
           </div>
         </div>
       </div>
    
 </hero>
-                    
-                   
-    </header>
+  </header>
 
     <main>
-      
-           <!-- <div class=" hero bg-base-200 min-h-screen max-w-screen container mx-auto sm:w-full">
+      <!--body section 1-->
+
+            <div class=" hero bg-base-200 min-h-screen w-full  mt-24 mb-24">
+              <div class=" container mx-auto">
                 <div class="hero-content flex flex-col-reverse  lg:flex-row-reverse lg:justify-between">
-                    <div class="pt-20">
+                    <div class="pt-20 lg">
                   <img
                     src="assets/Rectangle.png"
-                    class="max-w-lg rounded-md shadow-3xl" />
+                    class=" w-screen lg:max-w-lg rounded-md shadow-3xl border-dashed border-2  border-text-nav-color " />
                 </div>
                   <div >
-                    <img class="mb-6" src="assets/Vector.png" alt="">
-                    <button class="btn bg-button-second text-black py-0.5 mb-4">About Us</button>
+                    <div class="hidden lg:flex">
+                    <img class="mb-6" src="assets/Vector.png" alt="" >
+                  </div>
+                    <button class="btn bg-button-second text-second py-0.5 mb-4 rounded-3xl"><i class="fa-solid fa-arrow-right   text-second p-1 "></i>About Us</button>
                     <h2 class="font-bold text-4xl">We design thoughtful, liveable spaces</h2>
-                    <p class="py-6 text-base font-medium text-colour ">
-                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                    <p class="py-6 text-lg font-medium text-colour ">
+                        Our designs can make your home looks more beautiful and descipline.
                     </p>
                     <div >
                     <div class="card card-side bg-base-100 shadow-xl mb-4 ">
@@ -129,7 +152,7 @@
                         </figure>
                         <div class="card-body">
                           <h2 class="card-title">commercial</h2>
-                          <p class="text-colour  text-base font-medium py-6">The barn house captivates with its blend of rustic charm and modern.</p>
+                          <p class="footer-color  text-base font-medium py-6">We make unique combination of engineering and designs.</p>
 
                         </div>
                       </div>
@@ -141,28 +164,31 @@
                         </figure>
                         <div class="card-body">
                           <h2 class="card-title">residential</h2>
-                          <p class="text-colour py-6 text-base font-medium py-6">The barn house captivates with its blend of rustic charm and modern.</p>
+                          <p class="footer-color  text-base font-medium py-6">Our designs are more residential and environmental.</p>
                          
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>-->
-            
-              <section class="mt-24 bg-base-200 min-h-auto container mx-auto py-10">
+              </div>
+              </div>
+           
+            <!--body section 2-->
+
+              <section class="mt-24 bg-base-200 min-h-auto container mx-auto py-10 mb-24">
                 <div class="text-center">
-                <button class="btn bg-button-second mb-1 ">How we work</button>
+                <button class="btn bg-button-second text-second py-0.5 mb-4 rounded-3xl"><i class="fa-solid fa-arrow-right   text-second p-1 "></i>How we work</button>
                 <h2 class="font-bold text-4xl">Our Works Process</h2>
-                <p class="py-6 text-base font-medium text-colour">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents</p>
+                <p class="py-6 text-lg font-medium text-colour">We process the work with a focus on commercial TI projects and environment friendly.</p>
               </div>
             <div class=" container mx-auto text-center px-4">
-              <div class="grid grid-cols 1 lg:grid-cols-4 gap-10">
+              <div class="grid grid-cols 1 lg:grid-cols-4 gap-10 mb-20 mt-4">
                 <div class="card bg-card-1 shadow-xl">
-                  <div class="card-body">
+                  <div class="card-body ">
                     <img src="assets/concept.png" class="w-8 h-9" alt="">
                     <h2 class="card-title font-bold">Concept</h2>
-                    <p class="text-base font-medium text-nav-color">he barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents</p>
+                    <p class="text-base font-medium text-nav-color text-left">We design our concepts after discussing with clients about the goals and objectives of the space.We follow our own methods to build client's choosen design. </p>
                     
                   </div>
                 </div >
@@ -170,7 +196,7 @@
                   <div class="card-body">
                     <img src="assets/flow-chart.png" class="w-8 h-9" alt="">
                     <h2 class="card-title font-bold">Design Process</h2>
-                    <p class="text-base font-medium text-nav-color">he barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents</p>
+                    <p class="text-base font-medium text-nav-color text-left">The research process begins with identification of each of the users from principal occupants to guests and friends.   </p>
                     
                   </div>
                 </div>
@@ -178,7 +204,8 @@
                   <div class="card-body">
                     <img src="assets/vision.png" class="w-8 h-9" alt="">
                     <h2 class="card-title font-bold">Supervision</h2>
-                    <p class="text-base font-medium text-nav-color">he barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents</p>
+                    <p class="text-base font-medium text-nav-color text-left ">We control implementation of all the tasks from design, choosing materials and workers, renovation works up to the completion of given project.
+                    </p>
                     
                   </div>
                 </div>
@@ -186,67 +213,73 @@
                   <div class="card-body">
                     <img src="assets/budget-planning.png" class="w-8 h-9" alt="">
                     <h2 class="card-title font-bold">budget Planning</h2>
-                    <p class="text-base font-medium text-nav-color">he barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents</p>
+                    <p class="text-base font-medium text-nav-color text-left">We plan the most budget friendly design and make the right utilization of client's money.</p>
                     
                   </div>
                 </div>
               </div>
             </div>
-                
-                  
-                
-              </section>
+         </section>
+
+         <!--body section 3-->
+
+
               <section class="max-w-screen  mt-20 mb-20">
                 <div class="container mx-auto text-center">
-                  <button class="bg-article-button rounded-3xl py-2 px-4 color-black text-base font-bold mb-7">Explore Our Latest Works</button>
-                  <h2 class="font-bold text-4xl mb-7">Our Latest Portfolio</h2>
-                  <p class="py-6 text-colour text-base font-medium mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, repudiandae?</p>
+                  <button class="text-second bg-article-button rounded-3xl py-2 px-4  text-base font-bold mb-7"><i class="fa-solid fa-arrow-right mr-1  text-second p-1 "></i>Explore Our Latest Works</button>
+                  <h2 class="font-bold text-4xl mb-5">Our Latest Portfolio</h2>
+                  <p class="py-6 text-second text-lg font-medium mb-4  text-center">We have been working for 15+ years and since then we have worked with different clients and companies. </p>
                 </div>
                 <div class=" flex flex-col lg:flex lg:flex-row gap-1 ">
                   <div class="">
-                <div class="flex flex-col lg:flex-row gap-4 border rounded-xl border-solid w-3/4 ml-14 p-4 card bg-base-100 shadow-xl ">
+                <div class="flex flex-col lg:flex-row gap-4 border w-full justify-center rounded-xl border-solid lg:w-3/4 lg:ml-14 p-4 card bg-base-100 shadow-xl">
                   <img src="assets/img1.png" alt="" class="border-dashed border-2  border-text-nav-color">
                   <div>
-                  <h3 class="text-xl font-bold">commercial</h3>
-                  <p class="py-6 text-colour text-base font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt enim, itaque sunt sequi provident perferendis illo voluptates earum aliquid.</p>
-                  <button  class="btn btn-ghost p-0">View Details</button>
+                  <h3 class="text-2xl font-extrabold">Commercial</h3>
+                  <p class="py-6 text-nav-color text-base font-medium">One of our renowed projects that received international recognization and awards</p>
+                  <button  class="btn btn-ghost p-0 font-extrabold text-xl">View Details</button>
                 </div>
                 </div>
               </div>
-                <div class=" w-screen mt-4 flex justify-center lg:w-2/4 lg:mr-14">
-                  <img src="assets/img2.png" alt="" class="border rounded-xl border-solid  p:3 card bg-base-100 shadow-xl lg:p-8">
+                <div class=" w-full mt-4 flex justify-center mb-4 lg:w-2/4 lg:mr-14 ">
+                  <img src="assets/img2.png" alt="" class="border rounded-xl border-solid justify-center  p:6 card bg-base-100 shadow-xl lg:p-6">
                 </div>
                 
                 </div>
               </div>
-              <div class="flex flex-col-reverse lg:flex-row gap-8 ml-14 mt-6">
-              <div >
-                <img src="assets/img3.png" alt="" class="border rounded-xl border-solid  p-8 lg:p-8 card bg-base-100 shadow-xl " >
+              <div class="flex flex-col-reverse lg:flex-row gap-8 mt-6 lg:ml-14">
+              <div>
+                <img src="assets/img3.png" alt="" class="border rounded-xl border-solid justify-center w-full p-3 lg:p-8 card bg-base-100 shadow-xl " >
               </div>
-             <div class ="flex flex-col  lg:flex-row ml:14 w-3/4  p-4 gap-4 border rounded-xl border-solid lg:w-2/4  lg:p-2 card bg-base-100 shadow-xl ">
+             <div class ="flex flex-col lg:flex-row ml:14 w-full justify-center  p-4 gap-4 border rounded-xl border-solid lg:w-2/5  lg:p-2 card bg-base-100 shadow-xl ">
                   <img src="assets/img4.png" alt=""  class="  border-dashed border-2  border-text-nav-color">
                   <div>
-                  <h3 class="text-xl font-bold">commercial</h3>
-                  <p class="py-6 text-colour text-base font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt enim, itaque sunt sequi provident perferendis illo voluptates earum aliquid.</p>
-                  <button class="btn btn-ghost p-0">View Details</button>
+                  <h3 class="text-2xl font-extrabold">Residential</h3>
+                  <p class="py-6 text-nav-color text-base font-medium">Our latest project with foreign company in December,2023. </p>
+                  <button class="btn btn-ghost p-0 font-extrabold text-xl">View Details</button>
                 </div>
              </div>
-                <div class="  lg:mr-14 ">
-                  <img src="assets/img5.png" alt="" class="border rounded-xl border-solid p-3 lg:p-8 card bg-base-100 shadow-xl ">
+                <div class="  lg:mr-14">
+                  <img src="assets/img5.png" alt="" class="border rounded-xl justify-center border-solid p-3 w-full lg:p-8 card bg-base-100 shadow-xl ">
                 </div>
                 </div>
-             
-             
-              </section>
+                <div class="  lg:mr-14 mt-4">
+                  <img src="assets/img5.png" alt="" class="border rounded-xl justify-center border-solid p-3 w-full lg:p-8 lg:hidden card bg-base-100 shadow-xl ">
+                </div>
+                 </section>
+
+                 <!--body section 4-->
+
+
               <section class="   bg-base-200  mt-24 py-10">
                 <div class="container mx-auto"></div>
                 <div class="text-center">
-                <button class="bg-article-button rounded-3xl py-2 px-4 color-black text-base font-bold mb-7">Rinterio News</button>
-                <h2 class="font-bold text-4xl mb-7">Read Our Articles and News</h2>
-                <p class=" text-base font-medium text-colour text-center  lg:px-20 ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <button class="text-second bg-article-button rounded-3xl py-2 px-4  text-base font-bold mb-7"><i class="fa-solid fa-arrow-right mr-1  text-second p-1 "></i>Rinterio News</button>
+                <h2 class="font-bold text-4xl mb-5">Read Our Articles and News</h2>
+                <p class="py-6 text-second text-lg font-medium mb-4  text-center ">There are so many reviews and articles about us. Would you mind looking into some<span class="font-extrabold text-xl">?</span></p>
 
               </div>
-              <div class="container mx-auto grid grid-cols-1 mt:16 mt-7 lg:grid-cols-3 gap-10 container mx-auto mt-16">
+              <div class="container mx-auto grid grid-cols-1   lg:grid-cols-3 gap-10 mt-16">
                 <div class="card card-compact bg-base-100 shadow-xl">
                   <figure>
                     <img
@@ -256,14 +289,14 @@
                  
                   <div class="card-body">
                     <div class="flex flex-row gap-10">
-                      <h4 class="text-colour ">July 14,2024</h4>
-                      <h4 class="text-colour">By Admin</h4>
+                      <h4 class="footer-color text-base font-medium "><i class="fa-solid fa-calendar-days  ml-1 mr-1 text-sm"></i>July 14,2024</h4>
+                      <h4 class="footer-color text-base font-medium"><i class="fa-solid fa-person mr-1 text-sm"></i>By Admin</h4>
                     </div>
-                    <h2 class="card-title font-bold">How to choose the furniture right of your home.</h2>
+                    <h2 class="text-2xl font-extrabold pt-1">How to choose the furniture right of your home.</h2>
                    
-                    <p class=" text-base font-medium text-nav-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, cum?</p>
+                    <p class=" text-lg font-medium text-nav-color pt-2">We manage the perfect arrangement of your furniture.</p>
                     <div class="card-actions ">
-                      <button class="btn btn-ghost p-0">Read More</button>
+                      <button class="btn btn-ghost p-0 text-lg font-bold">Read More<i class="fa-solid fa-arrow-right  rounded-full bg-button-color p-1 -rotate-45"></i></button>
                     </div>
                   </div>
 
@@ -277,14 +310,14 @@
                  
                   <div class="card-body">
                     <div class="flex flex-row gap-10">
-                      <h4 class="text-colour ">July 14,2024</h4>
-                      <h4 class="text-colour">By Admin</h4>
+                      <h4 class="footer-color text-base font-medium "><i class="fa-solid fa-calendar-days  ml-1 mr-1 text-sm"></i>July 20,2024</h4>
+                      <h4 class="footer-color text-base font-medium"><i class="fa-solid fa-person mr-1 text-sm"></i>By Client</h4>
                     </div>
-                    <h2 class="card-title font-bold">How to decorate your home.</h2>
+                    <h2 class="card-title font-extrabold text-2xl pt-1">How to decorate your home.</h2>
                    
-                    <p class=" text-base font-medium text-nav-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, cum?</p>
+                    <p class=" text-lg font-medium text-nav-color pt-2">They gave suitable decoration for my home. It looks beautiful now.</p>
                     <div class="card-actions ">
-                      <button class="btn btn-ghost p-0">Read More</button>
+                      <button class="btn btn-ghost p-0 text-lg font-bold">Read More<i class="fa-solid fa-arrow-right  rounded-full bg-button-color p-1 -rotate-45"></i></button>
                     </div>
                   </div>
 
@@ -298,14 +331,14 @@
                  
                   <div class="card-body">
                     <div class="flex flex-row gap-10">
-                      <h4 class="text-colour ">July 14,2024</h4>
-                      <h4 class="text-colour">By Admin</h4>
+                      <h4 class="text-colour "><i class="fa-solid fa-calendar-days  ml-1 mr-1 text-sm"></i>August 14,2024</h4>
+                      <h4 class="text-colour"><i class="fa-solid fa-person mr-1 text-sm"></i>By Client</h4>
                     </div>
-                    <h2 class="card-title font-bold">How to set the interior design.</h2>
+                    <h2 class="card-title font-extrabold text-2xl pt-1">How to set the interior design.</h2>
                    
-                    <p class=" text-base font-medium text-nav-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, cum?</p>
+                    <p class=" text-lg font-medium text-nav-color pt-2">Their interior designs are very good and budget friendly. They prefer client's choices.</p>
                     <div class="card-actions ">
-                      <button class="btn btn-ghost p-0">Read More</button>
+                      <button class="btn btn-ghost p-0 text-lg font-bold">Read More<i class=" mr-1 fa-solid fa-arrow-right  rounded-full bg-button-color p-1 -rotate-45"></i></button>
                     </div>
                   </div>
 
@@ -313,34 +346,83 @@
                 
               </div>
               </section>
-              <div class="bg-contactbg mt-20">
-                <div class="flex flex-col justify-center items-center w-auto h-screen gap-5 mb-20">
-                  <button class="bg-article-button rounded-3xl py-2 px-4  text-base font-bold  ">Let's Connect</button>
-                  <div class="flex flex-col justify-center items-center gap-5 w-[60%]">
-                    <span class="font-bold text-4xl mb-7">Let's Discuss Next Project</span>
-                    <span class="text-base font-medium text-colour text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. A suscipit ut corrupti nobis, dignissimos molestiae hic omnis eos eaque, doloremque aliquam aliquid repellendus alias itaque reiciendis incidunt, eveniet nihil! Nam!</span>
+
+              <!--body section 5-->
+
+
+              <section class="container mx-auto text-center mt-24 mb-28 bg-creative-bg w-screen h-auto pt-20 pb-20">
+                <button  class="bg-article-button rounded-3xl py-2 px-4 color-black text-base font-bold mb-5"><i class="fa-solid fa-arrow-right  rounded-full bg-button-color p-1 -rotate-45"></i>Testimonials</button>
+                <h2 class="font-bold text-4xl mb-4">International Partners</h2>
+                <p class="py-6 text-second text-lg font-medium mb-4  text-center ">Rinterio world is a infrastructure solutions to customers and stakeholders across a broad range of industry sectors.</p>
+                <div class="flex flex-col gap-4  mt-4 lg:flex-col lg:justify-center lg:items-center lg:gap-7">
+                <div class="flex flex-col gap-4 bg-linear-bg border rounded-xl border-solid w-full  lg:w-[75%] p-4 lg:flex-row lg:justify-around lg:text-center">
+                <div class="w-full lg:w-[35%] lg:justify-center ">
+                  <img src="https://marvel-b1-cdn.bc0a.com/f00000000290195/www.utmb.edu/images/librariesprovider271/design-construction/designconstruction6ef673d869146b9ba0c5ff0a0070e114.jpg?sfvrsn=f1e21857_0" alt="" class="rounded-2xl">
+                </div>
+                <div class=" w-full lg:w-[40%]">
+                <h2 class="text-xl font-extrabold">Clara Sanchez, UPS</h2>
+                <p class="text-nav-color text-lg font-medium text-left mt-3">Clara Sanchez is a world famous company. It has many international awards and certificates. We collaborated with them in 2019 in a successful foreign project.</p>
+                <div class="collapse bg-emerald-100 mt-4 ">
+                  <input type="checkbox" />
+                  <div class="collapse-title text-bold font-medium">Explore UPS's success</div>
+                  <div class="collapse-content">
+                    <p class=" text-base font-medium text-left">Rinterio has  done many successful projects with Clara Sanchez in our country and abroad.</p>
                   </div>
-                  <div class=" grid grid-cols-1 lg:flex lg:flex-col lg:gap-4 lg:justify-center lg:items-center">
-                    <div class=" gap-y-4 mt-2 lg:flex lg:gap-2">
+                </div>
+                </div>
+              </div>
+              <div class="flex flex-col bg-linear-bg2 gap-7 lg:gap-4 border rounded-xl border-solid  w-full lg:w-[75%] p-4  lg:flex-row-reverse lg:justify-around lg:text-center ">
+                <div class=" w-full lg:w-[35%] lg:justify-center">
+                  <img src="https://constrofacilitator.com/wp-content/uploads/2023/07/Career-Outcomes-Of-Advanced-Diploma-Of-Civil-Construction-Design-jpg.webp" alt="" class="rounded-2xl">
+                </div>
+                <div class="w-full lg:w-[40%]">
+                <h2 class="text-xl font-extrabold">Shane Mark, DHL</h2>
+                <p class="text-nav-color text-lg font-medium text-left mt-3">Shane Mark is a world famous designer. He has many international awards and certificates. We collaborated with him in 2022 in a successful foreign project.</p>
+                <div class="collapse bg-emerald-100 mt-4">
+                  <input type="checkbox" />
+                  <div class="collapse-title text-bold font-medium">Explore DHL's success</div>
+                  <div class="collapse-content">
+                    <p class="text-colour text-base font-medium text-left">Rinterio has  done many successful projects with Shane Mark in our country and abroad.</p>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+              </section>
+              </section>
+
+              <!--body section 6-->
+
+
+              <div class="bg-contactbg mt-20">
+                <div class="flex flex-col justify-center items-center w-auto h-auto pt-10 gap-5 mb-20">
+                  <button class="bg-article-button rounded-3xl py-2 px-4  text-base font-bold  "><i class="fa-solid fa-arrow-right mr-1  text-second p-1 "></i>Let's Connect</button>
+                  <div class="flex flex-col justify-center items-center gap-5 text-center">
+                    <span class="font-bold text-5xl mb-4">Let's Discuss Next Project</span>
+                    <span class="text-lg font-medium text-second text-center">Book us for your next amazing design!! Fill up the form to stay connected...</span>
+                  </div>
+                  <div class=" grid grid-cols-1 lg:flex lg:flex-col lg:gap-4 lg:justify-center m-4 lg:items-center">
+                    <div class=" gap-2 mt-2 flex flex-col lg:flex lg:gap-2 lg:flex-row">
                       <input type="text" placeholder="first name*" class="input input-bordered input-sm w-full max-w-xl  border-box rounded-2xl text-base font-medium input-color" />
                       <input type="text" placeholder="Last name*" class="input input-bordered input-sm w-full max-w-xl border-box rounded-2xl text-base font-medium input-color"/>
                     </div>
-                    <div class=" gap-2 mt-2 lg:flex lg:gap-2 ">
+                    <div class=" gap-2 mt-2 flex flex-col lg:flex lg:flex-row lg:gap-2 ">
                       <input type="text" placeholder="Phone number*" class="input input-bordered input-sm w-full max-w-xl border-box rounded-2xl text-base font-medium input-color" />
                       <input type="text" placeholder="Email*" class="input input-bordered input-sm w-full max-w-xl border-box rounded-2xl text-base font-medium input-color"/>
                     </div>
-                    <textarea placeholder="Write your message here" rows="8" cols="50" class=" rounded-2xl text-base font-medium input-color border-box mt-2"></textarea>
-                    <button class=" w-full  bg-button-color lg:w-[100%] font-extrabold text-xl border-box rounded-2xl mt-2">Send Mail</button>
+                    <textarea placeholder=" Write your message here" rows="8" cols="50" class=" p-2 rounded-2xl text-base font-medium input-color border-box mt-2"></textarea>
+                    <button class=" w-full  bg-article-button lg:w-[100%] font-extrabold text-xl border-box rounded-2xl mt-2 p-2 mb-4">Send Mail<i class="fa-solid fa-arrow-right  rounded-full bg-button-color p-1 -rotate-45"></i></button>
                   </div>
                 </div>
               </div>
+            </main>
               
-    </main>
+       <!--footer section-->
     <footer class=" max-w-screen h-screen"> 
-      <section class="  container mx-auto bg-black text-center">
-        <h2 class="font-bold text-4xl text-white pt-20 pb-12">Rinterio</h2>
-        <p class=" font-medium footer-color pt-12 text-center pb-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quod at ipsa saepe cum dolores molestias iure eos quam enim adipisci, voluptate error sunt natus earum minus ut, explicabo architecto?</p>
-        <ul class=" grid grid-cols-1 gap-10 lg:flex  lg:items-center lg:justify-center  lg:gap-24"> 
+      <section class="  container mx-auto bg-gray-800 text-center">
+        <h2 class="font-bold text-4xl text-white pt-20 pb-12"><i class="fa-solid fa-arrow-right  rounded-full bg-button-color p-1 -rotate-45 mr-1"></i>Rinterio</h2>
+        <p class=" font-xl text-nav-color font-medium text-center pb-10 justify-center">Rinterio is a trust worthy organization tthat has been making it's client happy and proud from the beginning. </p>
+        <ul class=" grid grid-cols-1 gap-10 lg:flex  lg:items-center lg:justify-center  lg:gap-24 lg:pb-6"> 
           <li class="list-none "><a class="no-underline font-normal text-white text-base" href="#">Home</a></li>
           <li class="list-none"><a class="no-underline font-normal text-white text-base" href="#">Services</a></li>
           <li class=" list-none"><a class="no-underline font-normal text-white text-base" href="#">Portfolio</a></li>
@@ -349,7 +431,7 @@
           <li class=" list-none"><a class="no-underline font-normal text-white text-base" href="#">Blogs</a></li>
           <li class=" list-none"><a class="no-underline font-normal text-white text-base" href="#">Contact Us</a></li>
       </ul>
-      <button class="  bg-button-color font-extrabold mt-8 text-2xl p-3 rounded-2xl border-box mb-20 ">Book  Consult</button>
+      <button class="  bg-button-color font-bold mt-8 text-2xl p-3 rounded-3xl border-box mb-20 ">Book  Consult<i class="fa-solid text-white ml-1 fa-arrow-right mr-1 rounded-full bg-black p-1 -rotate-45"></i></button>
       </section>
     </footer>
 </body>
